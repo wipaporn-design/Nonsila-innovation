@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ระบบส่งแผนการจัดการเรียนรู้ - โรงเรียนโนนศิลาพิทยาคม</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ระบบจัดการแผนการสอนออนไลน์</h1>
+            <p>โรงเรียนโนนศิลาพิทยาคม สพม.กาฬสินธุ์</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">กลุ่มสาระวิทย์-คณิต</a></li>
+            <li><a href="#">กลุ่มสาระศิลปะ (Soft Power)</a></li>
+            <li><a href="#">คู่มือการใช้งาน</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="upload-section">
+            <h2>ส่งแผนการจัดการเรียนรู้ (Active Learning & PBL)</h2>
+            <form id="planForm">
+                <input type="text" placeholder="ชื่อ-นามสกุล ครูผู้สอน" required>
+                <select id="subjectGroup">
+                    <option value="">เลือกกลุ่มสาระการเรียนรู้</option>
+                    <option value="science">วิทยาศาสตร์และเทคโนโลยี</option>
+                    <option value="art">ศิลปะ (เน้น Soft Power ท้องถิ่น)</option>
+                </select>
+                <input type="file" accept=".pdf,.doc,.docx" required>
+                <button type="submit">บันทึกและส่งแผน</button>
+            </form>
+        </section>
+
+        <section class="best-practice">
+            <h2>คลังนวัตกรรม Best Practice (IFTE)</h2>
+            <div class="grid">
+                <div class="card">นวัตกรรม Soft Power ผู้เรียน</div>
+                <div class="card">การจัดการเรียนรู้แบบ STEM</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
